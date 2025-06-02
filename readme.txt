@@ -7,6 +7,7 @@ Version: 100.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: mosescursor
+Description: A clean and responsive WordPress Block theme for bloggers and small businesses.
 
 A full site editing theme. Basic version.
 
