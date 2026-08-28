@@ -3,7 +3,7 @@ Contributors: mosescursor
 Tested up to: 7.1
 Requires at least: 6.4
 Requires PHP: 7.4
-Version: 1.5.0
+Version: 1.5.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Copyright: mosescursor
@@ -27,9 +27,13 @@ theme.json         - Settings and default styles.
 accessibility.txt  - Accessibility information and testing notes.
 license.txt        - GPL v2.
 readme.txt         - Information about the theme.
-Screenshot.png     - Theme screenshot.
+screenshot.png     - Theme screenshot.
 
 == Changelog ==
+
+= 1.5.1 =
+* Renamed the theme screenshot to lowercase screenshot.png for WordPress.org compatibility.
+* Bumped the theme version to 1.5.1.
 
 = 1.5.0 =
 * Updated Tested up to value to WordPress 7.1.
