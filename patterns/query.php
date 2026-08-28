@@ -3,7 +3,7 @@
  * Title: Query
  * Slug: cursorfse/query
  * Categories: posts
- * Block Types: core/post-conent, core/query, core/post-title
+ * Block Types: core/post-content, core/query, core/post-title
  *
  * @package cursorfse
  * @since 1.0.0
@@ -15,13 +15,13 @@
 		<!-- wp:post-title {"level":2,"isLink":true} /-->
 		<!-- wp:post-featured-image {"isLink":true} /-->
 		<!-- wp:pattern {"slug":"cursorfse/hidden-post-meta"} /-->
-		<!-- wp:post-excerpt {"moreText":"Read more"} /-->
+		<!-- wp:post-excerpt {"moreText":""} /-->
 		<!-- wp:spacer {"height":"1rem"} -->
 		<div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 	<!-- /wp:post-template -->
 	<!-- wp:query-no-results -->
-	<!-- wp:paragraph --><p><?php esc_html_e( 'No results found.', 'cursorfse'); ?></p><!-- /wp:paragraph -->
+	<!-- wp:paragraph --><p><?php esc_html_e( 'No results found.', 'cursorfse' ); ?></p><!-- /wp:paragraph -->
 	<!-- /wp:query-no-results -->
 	<!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"space-between"}} -->
 	<!-- wp:query-pagination-previous /-->
