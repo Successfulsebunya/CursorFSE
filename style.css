@@ -5,24 +5,21 @@ Author URI: https://mosescursor.com/
 Theme URI: https://github.com/Successfulsebunya/CursorFSE
 Description: A clean and responsive WordPress Block theme for bloggers and small businesses.
 Tags: full-site-editing, block-patterns, blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
-Version: 1.4
+Version: 1.5.0
 Text Domain: cursorfse
 Requires at least: 6.4
 Requires PHP: 7.4
-Tested up to: 6.4
-Version: 100.0
-
+Tested up to: 7.1
 License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
-/* Styles intended only for the front.*/
+/* Styles intended only for the front. */
 html {
 	scroll-behavior: smooth;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-
 	html {
 		scroll-behavior: auto;
 	}
@@ -33,14 +30,84 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Text intended only for screen readers, with a visible focused state. */
+.screen-reader-text {
+	border: 0;
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: #ffffff;
+	clip-path: none;
+	color: #1f2937;
+	display: block;
+	font-size: 1rem;
+	font-weight: 600;
+	height: auto;
+	left: 8px;
+	line-height: normal;
+	padding: 12px 18px;
+	text-decoration: none;
+	top: 8px;
+	width: auto;
+	z-index: 100000;
+	outline: 3px solid #005a87;
+	outline-offset: 2px;
+}
+
+/* Ensure keyboard users can always locate the active control. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+.wp-element-button:focus-visible {
+	outline: 3px solid #005a87;
+	outline-offset: 3px;
+}
+
+/* Keep links within long-form content visually distinguishable. */
+.wp-block-post-content p a,
+.wp-block-post-content li a {
+	text-decoration: underline;
+	text-underline-offset: 0.15em;
+}
+
+.wp-element-button,
+.wp-block-button__link {
+	transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	.wp-element-button,
+	.wp-block-button__link {
+		transition: none;
+	}
+}
 
 /* Fancy Button Style */
 .is-style-fancy-button {
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: #fff !important;
-    border-radius: 50px;
-    padding: 0.75em 1.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	background: #005a87;
+	color: #ffffff !important;
+	border-radius: 50px;
+	padding: 0.75em 1.5em;
+	text-transform: uppercase;
+	font-weight: 700;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.is-style-fancy-button:hover {
+	background: #004568;
 }
