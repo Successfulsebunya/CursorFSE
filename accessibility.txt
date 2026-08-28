@@ -1,0 +1,34 @@
+=== CursorFSE Accessibility ===
+
+CursorFSE is designed to support the WordPress.org Accessibility Ready theme requirements.
+
+== Accessibility Features ==
+
+* Keyboard-accessible navigation using WordPress core navigation blocks.
+* A skip-to-content link that becomes visible when focused.
+* Screen-reader-only text support through the .screen-reader-text class.
+* Visible focus indicators for links, buttons, and form controls.
+* Underlined links within long-form post content.
+* Reduced-motion support for smooth scrolling and button transitions.
+* Semantic header, main, and footer landmarks in theme templates.
+* Responsive layouts intended to support browser zoom, text resizing, and reflow.
+* Decorative theme images use empty alternative text where appropriate.
+
+== Testing ==
+
+Accessibility testing for CursorFSE includes:
+
+* Keyboard-only navigation.
+* Skip-link operation on theme templates.
+* Visible focus state checks.
+* Browser zoom and responsive reflow checks.
+* Review against the WordPress.org Accessibility Ready theme guidelines.
+
+Accessibility of user-created content can also depend on site configuration and content choices, including navigation menus, images, links, color selections, video, embeds, and third-party plugins.
+
+== Reporting Accessibility Issues ==
+
+Please report accessibility issues through the CursorFSE GitHub issue tracker:
+https://github.com/Successfulsebunya/CursorFSE/issues
+
+When reporting an issue, please include the page or template affected, the browser and assistive technology used where applicable, and a description of the problem.
